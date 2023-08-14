@@ -13,7 +13,7 @@ const Veggie = () => {
     const check = localStorage.getItem("veggie");
 
     if (check) {
-      setVeggie(JSON.parse(check)); //convert string into object
+      setVeggie(JSON.parse(check)); 
     } else {
       axios
         .get(
@@ -22,7 +22,7 @@ const Veggie = () => {
         .then((res) =>
           localStorage.setItem(
             "veggie",
-            JSON.stringify(res.data.recipes), //convert object into string
+            JSON.stringify(res.data.recipes), 
             setVeggie(res.data.recipes)
           )
         );

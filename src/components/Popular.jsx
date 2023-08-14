@@ -13,7 +13,7 @@ const Popular = () => {
     const check = localStorage.getItem("popular");
 
     if (check) {
-      setPopular(JSON.parse(check)); //convert string into object
+      setPopular(JSON.parse(check)); 
     } else {
       axios
         .get(
@@ -22,14 +22,14 @@ const Popular = () => {
         .then((res) =>
           localStorage.setItem(
             "popular",
-            JSON.stringify(res.data.recipes), //convert object into string
+            JSON.stringify(res.data.recipes), 
             setPopular(res.data.recipes)
           )
         );
     }
   }, []);
 
-  // console.log(popular);
+  
 
   return (
     <div style={{ marginBottom: "1rem" }}>

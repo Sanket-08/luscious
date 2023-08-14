@@ -18,8 +18,7 @@ const RecipeDetail = () => {
       .then((res) => setRecipe(res.data));
   }, []);
 
-  // console.log("Search Term", searchTerm.id);
-  // console.log("Recipe", recipe);
+
 
   return (
     <motion.div
