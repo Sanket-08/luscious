@@ -38,7 +38,7 @@ const Tabs = ({ recipe }) => {
               />
               <Tab
                 className="tab-selected"
-                label="Ingrediants"
+                label="Ingredients"
                 value="2"
                 sx={{ fontFamily: "Poppins" }}
               />
